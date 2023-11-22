@@ -35,10 +35,10 @@ pipeline{
 					sh 'docker tag divisorcounterjenkins-counter-service longhairy/divisor_counter_jenkins:counter-service'
 					sh 'docker push longhairy/divisor_counter_jenkins:counter-service'
 
-					sh 'docker tag cache-service longhairy/divisor_counter_jenkins:cache-service'
+					sh 'docker tag divisorcounterjenkins-cache-service longhairy/divisor_counter_jenkins:cache-service'
 					sh 'docker push longhairy/divisor_counter_jenkins:cache-service'
 
-					sh 'docker tag test-service longhairy/divisor_counter_jenkins:test-service'
+					sh 'docker tag divisorcounterjenkins-test-service longhairy/divisor_counter_jenkins:test-service'
 					sh 'docker push longhairy/divisor_counter_jenkins:test-service'
 
 					
