@@ -32,7 +32,7 @@ pipeline{
 					sh 'docker login -u $USERNAME -p $PASSWORD'
 					sh 'docker image list'
 					
-					sh 'docker tag counter-service longhairy/divisor_counter_jenkins:counter-service'
+					sh 'docker tag divisorcounterjenkins-counter-service longhairy/divisor_counter_jenkins:counter-service'
 					sh 'docker push longhairy/divisor_counter_jenkins:counter-service'
 
 					sh 'docker tag cache-service longhairy/divisor_counter_jenkins:cache-service'
