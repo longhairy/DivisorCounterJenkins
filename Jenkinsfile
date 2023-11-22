@@ -12,7 +12,6 @@ pipeline{
 		stage("Prepare services"){
 			steps{
 				sh 'docker compose up counter-service'
-				sh 'docker compose up cache-service'
 			}
 		}
 		stage("Test"){
