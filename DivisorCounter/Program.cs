@@ -15,7 +15,7 @@ public class Program
     public static void Main()
     {
         long first = 1_000_000_000;
-        long last = 1_000_000_001;
+        long last = 1_000_000_002;
        // long last = 1_000_000_020;
 
         var numberWithMostDivisors = first;
