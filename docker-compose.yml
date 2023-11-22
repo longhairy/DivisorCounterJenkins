@@ -1,6 +1,11 @@
 version: "3.9"
 
 services:
+  test-service:
+     build:
+       context: .
+       dockerfile: TestProject/Dockerfile
+       
   counter-service:
     build:
       context: .
